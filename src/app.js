@@ -50,9 +50,18 @@ const App = () => {
 		]
 	})
 
-	const updateLetter = (rowIdx, letterIdx, e) => {
-		console.log(gameState.rows[rowIdx][letterIdx], e.target.value)
-		setGameState(gameState.rows[rowIdx][letterIdx].letter = e.target.value)
+	const updateLetter = (rowIdx, colIdx, e) => {
+		const rows = gameState.rows
+    const row = rows[rowIdx]
+
+    const newLetter = e.target.value
+    const newLetterObj = { ...row[colIdx], letter: newLetter.toUpperCase() }
+    const newRow = [...row]
+    newRow[colIdx] = newLetterObj
+    const newRows = [...rows]
+    newRows[rowIdx] = newRow
+
+    setGameState({ ...gameState, rows: newRows })
 	}
 
 	return (
