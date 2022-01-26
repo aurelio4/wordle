@@ -79,54 +79,59 @@ const App = () => {
 				/>
 			</div>
 			<div className="second-row-container">
-				{/* <Row
+				<Row
 					gameState={gameState}
-					handleFirstLetterChange={handleFirstLetterChange}
-					handleSecondLetterChange={handleSecondLetterChange}
-					handleThirdLetterChange={handleThirdLetterChange}
-					handleFourthLetterChange={handleFourthLetterChange}
-					handleFifthLetterChange={handleFifthLetterChange}
-				/> */}
+					row={1}
+					handleFirstLetterChange={(e) => { updateLetter(1, 0, e) }}
+					handleSecondLetterChange={(e) => { updateLetter(1, 1, e) }}
+					handleThirdLetterChange={(e) => { updateLetter(1, 2, e) }}
+					handleFourthLetterChange={(e) => { updateLetter(1, 3, e) }}
+					handleFifthLetterChange={(e) => { updateLetter(1, 4, e) }}
+				/>
 			</div>
 			<div className="third-row-container">
-				{/* <Row
+				<Row
 					gameState={gameState}
-					handleFirstLetterChange={handleFirstLetterChange}
-					handleSecondLetterChange={handleSecondLetterChange}
-					handleThirdLetterChange={handleThirdLetterChange}
-					handleFourthLetterChange={handleFourthLetterChange}
-					handleFifthLetterChange={handleFifthLetterChange}
-				/> */}
+					row={2}
+					handleFirstLetterChange={(e) => { updateLetter(2, 0, e) }}
+					handleSecondLetterChange={(e) => { updateLetter(2, 1, e) }}
+					handleThirdLetterChange={(e) => { updateLetter(2, 2, e) }}
+					handleFourthLetterChange={(e) => { updateLetter(2, 3, e) }}
+					handleFifthLetterChange={(e) => { updateLetter(2, 4, e) }}
+				/>
 			</div>
 			<div className="fourth-row-container">
-				{/* <Row
+				<Row
 					gameState={gameState}
-					handleFirstLetterChange={handleFirstLetterChange}
-					handleSecondLetterChange={handleSecondLetterChange}
-					handleThirdLetterChange={handleThirdLetterChange}
-					handleFourthLetterChange={handleFourthLetterChange}
-					handleFifthLetterChange={handleFifthLetterChange}
-				/> */}
+					row={3}
+					handleFirstLetterChange={(e) => { updateLetter(3, 0, e) }}
+					handleSecondLetterChange={(e) => { updateLetter(3, 1, e) }}
+					handleThirdLetterChange={(e) => { updateLetter(3, 2, e) }}
+					handleFourthLetterChange={(e) => { updateLetter(3, 3, e) }}
+					handleFifthLetterChange={(e) => { updateLetter(3, 4, e) }}
+				/>
 			</div>
 			<div className="fifth-row-container">
-				{/* <Row
+				<Row
 					gameState={gameState}
-					handleFirstLetterChange={handleFirstLetterChange}
-					handleSecondLetterChange={handleSecondLetterChange}
-					handleThirdLetterChange={handleThirdLetterChange}
-					handleFourthLetterChange={handleFourthLetterChange}
-					handleFifthLetterChange={handleFifthLetterChange}
-				/> */}
+					row={4}
+					handleFirstLetterChange={(e) => { updateLetter(4, 0, e) }}
+					handleSecondLetterChange={(e) => { updateLetter(4, 1, e) }}
+					handleThirdLetterChange={(e) => { updateLetter(4, 2, e) }}
+					handleFourthLetterChange={(e) => { updateLetter(4, 3, e) }}
+					handleFifthLetterChange={(e) => { updateLetter(4, 4, e) }}
+				/>
 			</div>
 			<div className="sixth-row-container">
-				{/* <Row
+				<Row
 					gameState={gameState}
-					handleFirstLetterChange={handleFirstLetterChange}
-					handleSecondLetterChange={handleSecondLetterChange}
-					handleThirdLetterChange={handleThirdLetterChange}
-					handleFourthLetterChange={handleFourthLetterChange}
-					handleFifthLetterChange={handleFifthLetterChange}
-				/> */}
+					row={5}
+					handleFirstLetterChange={(e) => { updateLetter(5, 0, e) }}
+					handleSecondLetterChange={(e) => { updateLetter(5, 1, e) }}
+					handleThirdLetterChange={(e) => { updateLetter(5, 2, e) }}
+					handleFourthLetterChange={(e) => { updateLetter(5, 3, e) }}
+					handleFifthLetterChange={(e) => { updateLetter(5, 4, e) }}
+				/>
 			</div>
 		</div>
 	);
